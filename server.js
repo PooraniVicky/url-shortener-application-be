@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware
 app.use(cors({ 
-  origin: 'https://url-shortener-app-poorani.netlify.app/',
+  origin: 'https://url-shortener-app-poorani.netlify.app',
   credentials: true 
 }));
 
