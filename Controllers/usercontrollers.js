@@ -121,7 +121,7 @@ try {
 
   await user.save();
 
-  const url = `https://url-shortener-app-poorani.netlify.app//reset-password/${resetToken}`;
+  const url = `https://url-shortener-app-poorani.netlify.app/reset-password/${resetToken}`;
   transporter.sendMail({
     to: email,
     subject: 'Reset your password',
