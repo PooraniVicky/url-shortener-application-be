@@ -1,30 +1,4 @@
 import Url from "../Models/urlSchema.js";
-// export const addURL = async (req, res) => {
-//   const { email, longUrl, shortUrl } = req.body;
-
-//   try {
-//     const user = await User.findOne({ email });
-//     if (!user) {
-//       return res.status(404).json({ message: 'User not found' });
-//     }
-
-//     const newURL = {
-//       longUrl,
-//       shortUrl,
-//       date: new Date(),
-//       clicks: 0
-//     };
-
-//     user.urls.push(newURL);
-//     await user.save();
-
-//     res.status(201).json({ message: 'URL added successfully', url: newURL });
-//   } catch (error) {
-//     console.error('Error adding URL:', error);
-//     res.status(500).json({ message: 'Error adding URL', error: error.message });
-//   }
-// };
-
 // Function to generate a random short ID
 function generateShortId(length) {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

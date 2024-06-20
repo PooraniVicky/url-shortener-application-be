@@ -37,7 +37,7 @@ export const signup = async (req, res) => {
     const newUser = new User({ username, email, password: hashedPassword, repeatPassword: hashedPassword, activationToken });
 
     await newUser.save();
-    const url = `http://localhost:5173/activate/${activationToken}`;
+    const url = `https://url-shortener-app-poorani.netlify.app/activate/${activationToken}`;
     transporter.sendMail({
       to: email,
       subject: 'Activate your account',
@@ -121,7 +121,7 @@ try {
 
   await user.save();
 
-  const url = `http://localhost:5173/reset-password/${resetToken}`;
+  const url = `https://url-shortener-app-poorani.netlify.app//reset-password/${resetToken}`;
   transporter.sendMail({
     to: email,
     subject: 'Reset your password',
